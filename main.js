@@ -22,7 +22,7 @@
 //     console.log("Hello world")
 // }
 
-// 4. Palindrom 
+// 4. Palindrom
 // let promptValue = prompt("Enter any word!")
 // let reversed = ""
 
@@ -39,7 +39,6 @@
 // 5. Returning only the upparCase letters
 // let text = prompt("Enter Anything with upparCase")
 // let result = ""
-
 
 // for (let i = 0; i <= text.length - 1; i++) {
 //     if (text[i] === text[i].toUpperCase()) {
@@ -71,8 +70,38 @@
 // console.log(result.length)
 
 // 8. returing * instead of some of the emails
-let text = "identitynull@gmail.com"
+// let text = "identitynull@gmail.com"
 
-for (let i = 0; i <=text.length -1; i++ ) {
-    
+// for (let i = 0; i <=text.length -1; i++ ) {
+
+// }
+
+// codewars
+// 1. Who ate the last cookie?
+// function cookie(x) {
+//   if (typeof x === "string") {
+//     return "Who ate the last cookie? It was Zach!";
+//   } else if (typeof x === "number") {
+//     return "Who ate the last cookie? It was Monica!";
+//   } else {
+//     return "Who ate the last cookie? It was the dog!";
+//   }
+// }
+
+// 2. check whether it need to be plural or not
+// function plural(n) {
+//   return n !== 1
+// }
+
+// 3.
+
+function sumArray(array) {
+  array.sort((a, b) => a - b).splice(0, 1);
+  array.sort((a, b) => b - a).splice(0, 1);
+
+  return array.reduce((e,total) => e + total, 0);
 }
+
+console.log(sumArray([1, -2, 2, 3, 5, 8, 9, 10, 6]));
+
+Array.isArray()
