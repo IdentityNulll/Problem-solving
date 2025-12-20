@@ -95,13 +95,24 @@
 
 // 3.
 
-function sumArray(array) {
-  array.sort((a, b) => a - b).splice(0, 1);
-  array.sort((a, b) => b - a).splice(0, 1);
+// function sumArray(array) {
+//   array.sort((a, b) => a - b).splice(0, 1);
+//   array.sort((a, b) => b - a).splice(0, 1);
 
-  return array.reduce((e,total) => e + total, 0);
-}
+//   return array.reduce((e,total) => e + total, 0);
+// }
 
-console.log(sumArray([1, -2, 2, 3, 5, 8, 9, 10, 6]));
+// console.log(sumArray([1, -2, 2, 3, 5, 8, 9, 10, 6]));
 
-Array.isArray()
+// Array.isArray()
+
+// 4.
+// function towerBuilder(nFloors) {
+//   let tower = [];
+//   for (let i = 1; i <= nFloors; i++) {
+//     let space = " ".repeat(nFloors - i);
+//     let star = "*".repeat(2 * i - 1);
+//     tower.push(`${space}${star}${space}`);
+//   }
+//   return tower;
+// }
