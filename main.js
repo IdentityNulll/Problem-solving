@@ -116,3 +116,49 @@
 //   }
 //   return tower;
 // }
+
+// 5.
+// function cleanString(s) {
+//   let result = [];
+
+//   for (let i = 0; i < s.length; i++) {
+//     if (s[i] === "#") {
+//       if (result.length > 0) {
+//         result.pop();
+//       }
+//     } else {
+//       result.push(s[i]);
+//     }
+//   }
+
+//   return result.join("");
+// }
+// console.log(cleanString("abc#d##c"))
+
+// 6.
+
+// var runLengthEncoding = function (str) {
+//   if (str.length === 0) return [];
+
+//   let result = [];
+//   let count = 1;
+//   let currentCharacter = str[0];
+
+//   for (let i = 1; i < str.length; i++) {
+//     if (str[i] === currentCharacter) {
+//       count++;
+//     } else {
+//       result.push([count, currentCharacter]);
+//       currentCharacter = str[i];
+//       count = 1;
+//     }
+//   }
+//   result.push([count, currentCharacter]);
+
+//   return result;
+// };
+
+// console.log(runLengthEncoding("aaaaaaaaaaqwert"));
+
+// 7. 
+
