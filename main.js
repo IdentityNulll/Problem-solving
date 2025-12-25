@@ -162,12 +162,63 @@
 
 // 7.
 
-function multiTable(number) {
-  let table = "";
-  for (let i = 1; i <= 10; i++) {
-    table += `${i} x ${number} = ${i * number}${i < 10 ? "\n" : ""}`;
-  }
-  return table;
-}
+// function multiTable(number) {
+//   let table = "";
+//   for (let i = 1; i <= 10; i++) {
+//     table += `${i} x ${number} = ${i * number}${i < 10 ? "\n" : ""}`;
+//   }
+//   return table;
+// }
 
-console.log(multiTable(7));
+// console.log(multiTable(7));
+
+// 8.
+// function toUnderscore(string) {
+//   if (typeof string === "number") {
+//     return String(string);
+//   }
+
+//   let result = [];
+
+//   string.split("").forEach((char, index) => {
+//     if (
+//       index !== 0 &&
+//       char === char.toUpperCase() &&
+//       char !== char.toLowerCase()
+//     ) {
+//       result.push("_" + char.toLowerCase());
+//     } else {
+//       result.push(char.toLowerCase());
+//     }
+//   });
+
+//   return result.join("");
+// }
+
+// 9.
+// function stringTransformation(string, transformations) {
+//   let result = string;
+
+//   for (let operation of transformations) {
+//     if (operation == "U") {
+//       result = result.toUpperCase();
+//     }
+
+//     if (operation == "L") {
+//       result = result.toLowerCase();
+//     }
+
+//     if (operation == "R") {
+//       result = result.split("").reverse().join("");
+//     }
+
+//     if (operation == "D") {
+//       result = result
+//         .split("")
+//         .map((c) => c + c)
+//         .join("");
+//     }
+//   }
+
+//   return result;
+// }
