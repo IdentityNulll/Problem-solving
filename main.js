@@ -222,3 +222,73 @@
 
 //   return result;
 // }
+
+// 10.
+// function goodVsEvil(good, evil) {
+//   let hero = good.split(" ");
+//   let heroWorth = [1, 2, 3, 3, 4, 10];
+//   let goodTotal = 0;
+
+//   for (let i = 0; i < hero.length; i++) {
+//     goodTotal += Number(hero[i]) * heroWorth[i];
+//   }
+
+//   let villain = evil.split(" ");
+//   let villainWorth = [1, 2, 2, 2, 3, 5, 10];
+//   let villainTotal = 0;
+
+//   for (let i = 0; i < villain.length; i++) {
+//     villainTotal += Number(villain[i]) * villainWorth[i];
+//   }
+//   if (villainTotal === goodTotal) {
+//     return "Battle Result: No victor on this battle field";
+//   } else if (villainTotal > goodTotal) {
+//     return "Battle Result: Evil eradicates all trace of Good";
+//   } else if (villainTotal < goodTotal) {
+//     return "Battle Result: Good triumphs over Evil";
+//   }
+// }
+// console.log(goodVsEvil("1 1 1 1 1", "1 1 1 1 1"));
+
+// 11.
+// function highAndLow(numbers) {
+//   const sorted = numbers
+//     .split(" ")
+//     .map(Number)
+//     .sort((a, b) => a - b);
+//   const min = sorted[0];
+//   const max = sorted[sorted.length - 1];
+//   return `${max} ${min}`;
+// }
+
+// console.log(highAndLow("1 2 2 45 5 12 21 -12"));
+
+// 12.
+// function dontGiveMeFive(start, end) {
+//   let count = 0;
+
+//   for (let i = start; i <= end; i++) {
+//     if (!i.toString().includes("5")) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+// console.log(dontGiveMeFive(1, 9)); // 8
+// console.log(dontGiveMeFive(4, 17)); // 12
+
+// 13.
+function sumMul(n, m) {
+  if (n <= 0 || m <= 0) return "INVALID";
+
+  let count = 0;
+
+  for (let i = n; i < m; i+=n) {
+    count +=i
+  }
+
+  return count;
+}
+console.log(sumMul(1, 4));
